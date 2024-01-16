@@ -63,7 +63,7 @@ const SignUp = () => {
 
       await emailjs.send(serviceId, templateId, {
         email: email,
-        link: `http://localhost:5173/?id=${userId}`,
+        link: `http://localhost:5173/land?id=${userId}`,
       });
     } catch (error) {
       const errorCode = error.code;

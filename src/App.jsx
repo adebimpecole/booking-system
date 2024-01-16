@@ -4,14 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import LandingPage from "./LandingPage/LandingPage";
-import SignUp from "./Authentication/SignUp";
 import { Context } from "./Utilities/Context";
 
 const Login = lazy(() => import("./Authentication/Login"));
 const Dashboard = lazy(() => import("./Dashboard/Dashboard"));
 const SetUp = lazy(() => import("./Authentication/SetUp"));
 const Booking = lazy(() => import("./LandingPage/Booking"));
-const Siginup = lazy(() => import("./Authentication/SignUp"));
+const Signup = lazy(() => import("./Authentication/SignUp"));
 const Modal2 = lazy(() => import("./LandingPage/Modal2"));
 
 function App() {
@@ -113,7 +112,7 @@ function App() {
         <>
           <Context.Provider value={providerValue}>
             <Routes>
-              <Route exact path="*" element={<LandingPage />} />
+              <Route exact path="*" element={<SignUp />} />
               <Route
                 exact
                 path="/login"
@@ -134,10 +133,10 @@ function App() {
               />
               <Route
                 exact
-                path="/signup"
+                path="/land"
                 element={
                   <Suspense fallback={<div>Loading...</div>}>
-                    <Siginup />
+                    <LandingPage />
                   </Suspense>
                 }
               />
