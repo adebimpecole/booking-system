@@ -14,6 +14,8 @@ const Signup = lazy(() => import("./Authentication/SignUp"));
 const Modal2 = lazy(() => import("./LandingPage/Modal2"));
 
 function App() {
+  console.log('Rendering App component');
+
   let [page, setpage] = useState("Home");
   let [view, setview] = useState("Profile");
 
