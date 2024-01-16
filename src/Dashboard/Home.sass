@@ -1,0 +1,114 @@
+.home
+    width: 83vw
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    height: 100%
+
+    .real_content
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        width: 100%
+        padding: 1rem 3rem
+        height: 100%
+
+        .dash_header
+            color: #292929f3
+            font-size: 1.8rem
+            font-weight: 600
+            margin: 0
+            padding-bottom: 1.5rem
+            text-transform: capitalize
+
+        .info_cards
+            display: flex
+            flex-direction: row
+            color: black
+            align-items: flex-start
+            justify-content: space-between
+            width: 100%
+
+            .each_card
+                display: flex
+                flex-direction: row
+                width: 24%
+                box-sizing: border-box
+                padding: 1rem
+                background: #1818190b
+                border-radius: 10px
+                gap: 1rem
+                align-items: center
+
+                img
+                    background: #76A887
+                    border-radius: 100px
+                    color: white
+                    width: 28%
+                    height: 28%
+                    padding: .9rem
+                    box-sizing: border-box
+
+                .card_dets
+                    display: flex
+                    flex-direction: column
+                    height: fit-content
+                    gap: .3rem
+
+                    .card_title
+                        font-size: .8rem
+                        color: #666866ef
+
+                    .card_no
+                        font-size: 1.6rem
+                        font-weight: 600
+                        color: #292929f3
+                        line-height: 1
+
+        .chart_n_table
+            display: flex
+            flex-direction: row
+            padding: 2rem 0
+            height: 100%
+
+            .chart_header
+                padding: 0 0 1rem 0
+
+            .recent_charts
+                width: 100%
+                height: 50vh
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .chart_header
+                    color: black
+                    padding: 0 0 0
+                    width: 100%
+                    font-size: .9rem
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-between
+
+                    span
+                        font-size: .8rem
+                        cursor: pointer
+                        color: green
+
+                        &:hover
+                            text-decoration: underline
+
+                .the_chart
+                    width: 100%
+
+                    thead
+                        background: #1818190b
+                        box-sizing: content-box
+                        color: #275310
+                        font-weight: bold
+                        font-size: .85rem
+
+                        th
+                            text-transform: capitalize
+

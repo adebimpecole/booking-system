@@ -1,0 +1,13 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /restaurant/{document=**} {
+      allow read, write;
+    }
+    match /tables/{document=**} {
+      allow read, write;
+    }
+    match /reservations/{document=**} {
+      allow read, write;
+    }
+  }
+}

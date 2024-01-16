@@ -1,0 +1,224 @@
+.sidenav
+    width: 18.5vw
+    height: 100%
+    background: #1818190b
+    // border-right: 1px solid #03e8312a
+    // padding: 3% 0 3% 0
+    // margin: 2% 0
+    box-sizing: border-box
+    position: fixed
+
+.brndname, .opt span
+    color: black
+
+.brndname
+    font-size: 1.6rem
+    font-weight: bold
+    margin: 4.5rem 0 3% 0
+
+.subnav
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.brand
+    height: 15%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    gap: 5%
+
+.opened_tab
+    font-weight: 600
+    color: #3f6f15!important
+
+.nav
+    height: 80%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    flex: 1
+    padding: 2rem 0 3rem 0
+
+    div
+        width: 100%
+        height: fit-content
+
+        .option
+            height: 3rem
+            display: flex
+            flex-direction: row
+            align-items: center
+            gap: 4%
+            justify-content: flex-start
+            padding: 0 2rem
+            color: #666866ef
+            font-weight: 500
+            width: 100%
+            transition: width .1s
+            cursor: pointer
+            text-decoration: none
+            font-size: .9rem
+
+        .option:hover
+            color: #3f6f15
+
+        .option span
+            color: inherit
+
+.opts
+    justify-content: space-between
+    font-weight: normal
+
+.active
+    color: black
+
+.go
+    height: 60%
+
+.go img
+    height: 100%
+    width: auto
+
+.ord, .rord
+    font-weight: bold
+    color: black
+    padding: 0 .5rem
+    border-radius: 25%
+
+.rord
+    background-color: #06E775
+
+.ord
+    background-color: #F3C294
+
+.spc
+    display: flex
+    flex-direction: row
+    gap: 8%
+    width: fit-content
+    align-items: center
+    width: 60%
+
+.opt:hover
+    background-color: #EFEFEF
+    color: black
+    width: 91%
+
+// top navigation
+.topnav
+    width: 81.5vw
+    display: flex
+    flex-direction: row
+    height: 4rem
+    background: white
+    align-items: center
+    justify-content: space-between
+    box-sizing: border-box
+    padding: 0 3rem 0 1.8rem
+    color: black
+    text-transform: uppercase
+    font-weight: 600
+    font-size: .9rem
+    border-bottom: 1px solid #1818190c
+
+.bell
+    width: 1rem
+
+.right_side
+    display: flex
+    flex-direction: row
+    gap: 1rem
+    align-items: center
+
+input
+    height: 2rem
+    width: 25rem
+    padding: 1rem 0
+    border-radius: 15px
+    box-sizing: border-box
+    background: inherit
+    color: black
+    border: none
+    outline: none
+    font-size: .8rem
+
+.page_title
+    gap: 1rem
+    border-radius: 20px
+    width: 30vw
+    background: white!important
+    border: 1.8px solid #cccdd2
+
+    div
+        display: flex
+        flex-direction: row
+        align-items: center
+
+.search_box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.search-icon
+    color: #9b9ca0
+    height: .8rem
+    padding: 0rem
+    box-sizing: border-box
+    border-radius: 5px
+    cursor: pointer
+
+    &:hover
+        color: green
+
+.profile_name
+    background: green
+    color: white
+    width: 2rem
+    height: 2rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+
+// @media only screen and (max-width: 943px)  
+//     .sidenav  
+//         width: 20%  
+
+// @media only screen and (max-width: 768px)  
+//     .sidenav  
+//         width: 9%  
+//         padding: 4% 0 0 0  
+
+//     .ntxt, .brndname  
+//         display: none  
+
+//     .opt, .opts, .spc  
+//         font-size: 1.3rem  
+//         justify-content: center  
+//         border-radius: 0  
+
+//     .spc  
+//         font-size: 2rem  
+
+//     .opt:hover, .active:hover  
+//         font-size: 1.8rem  
+
+//     .rord, .ord  
+//         display: none  
+
+// @media only screen and (max-width: 568px)  
+//     .sidenav  
+//         width: 12%  
+//         padding: 5% 0 0 0  
+
+//     .brand  
+//         height: 15%  
+//         align-items: flex-start  
+
+// @media only screen and (max-width: 468px)  
+//     .sidenav  
+//         width: 15%  

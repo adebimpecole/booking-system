@@ -1,0 +1,368 @@
+.Signup
+    display: flex
+    flex-direction: row
+    height: 100vh
+    width: 100%
+    align-items: center
+    background-color: white
+
+.the_image, .the_image2
+    height: 100%
+    width: 50%
+    background-image: url(../assets/food1.jpg)
+    background-position: top center
+    background-size: cover
+
+    .img_container
+        height: 100%
+        width: 100%
+        background-color: #45454571
+
+.the_image2
+    background-image: url(../assets/food2.jpg)
+
+.log
+    height: 100%
+    width: 100%
+
+.form_name, .set_name
+    margin: 0
+    height: 10%
+    color: #275201
+    font-size: 1.8rem
+
+.form_container
+    width: 50%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 1rem
+    padding: 7%
+
+    form
+        height: fit-content
+        gap: 1.3rem
+        display: flex
+        flex-direction: column
+
+        .logged
+            border: 1px solid #989898
+            background: white
+            height: 3.8rem
+            width: 100%
+            padding: 1rem 1.5rem
+            box-sizing: border-box
+            font-size: .9rem
+            color: black
+
+        .logged:focus
+            outline: none
+
+        .button
+            height: 4rem
+            width: 100%
+            background-color: #275201
+            color: white
+            font-weight: bold
+            font-size: .9rem
+            cursor: pointer
+            text-decoration: none
+            border: none
+            border-radius: 5px
+
+        .button:hover
+            background-color: #275201e7
+
+        .account
+            display: flex
+            justify-content: space-between
+            align-items: center
+            gap: 5%
+            font-size: .8rem
+            color: black
+
+            .login_link
+                color: #275201
+                text-decoration: none
+                font-size: .8rem
+                font-weight: bold
+                cursor: pointer
+
+            .login_link:hover
+                text-decoration: underline
+
+// Set up page
+.Setup, .setup2
+    background: white
+    height: 100vh
+    width: 100vw
+    color: black
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+    .set_head
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+
+    .lil_exp
+        width: 70%
+        text-align: center
+        font-size: 1rem
+        color: #434343c7
+
+.table_cards
+    display: grid
+    grid-template-columns: 25vw 25vw 25vw
+    gap: 1rem
+    cursor: pointer
+
+    .table_icons
+        padding: 1rem
+        height: 7rem
+        width: auto
+        margin-right: 1rem
+
+    .wierd
+        width: 8rem
+        height: 8rem
+        padding: 0 1rem 0 0
+        margin: 0
+
+    .tables_tab
+        border: 1px solid #f0f0f08d
+        background: white
+        display: flex
+        flex-direction: row
+        padding: 1rem 0 1rem 1rem
+        border-radius: 3px
+        align-items: center
+
+        div
+            display: flex
+            flex-direction: column
+            gap: .2rem
+
+            .card_head
+                font-size: 1.2rem
+                font-weight: 500
+                color: #434343c7
+
+            .card_exp
+                font-size: .9rem
+                color: #434343c7
+                line-height: 1.1rem
+
+    .tables_tab:hover
+        background: #347a0e17
+
+.move_on
+    width: 77%
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    margin: 1rem
+
+    .next_button
+        background: #275310
+        color: white
+        padding: .5rem 2rem
+        border-radius: 3px
+        font-weight: 600
+        text-transform: capitalize
+        font-size: 1rem
+        cursor: pointer
+
+    .next_button:hover
+        background: #275310eb
+
+.good
+    width: fit-content
+    height: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+    margin: 0 1rem 0 0
+
+    img
+        background: green
+        border-radius: 50px
+        height: .7rem
+        padding: .15rem
+        box-sizing: content-box
+        width: auto
+        visibility: hidden
+
+.overlay_tab
+    width: 100vw
+    position: absolute
+    top: 0
+    left: 0
+    background: #05000b87
+    display: none
+    justify-content: flex-end
+
+.code_arrow
+    color: #275310
+    font-size: 1.2rem
+    display: flex
+    flex-direction: row
+    gap: .3rem
+    align-items: center
+    cursor: pointer
+
+    span
+        font-size: .8rem
+        font-weight: bold
+
+.selected_tab
+    border: 1.5px solid #347a0e44!important
+    background: #347a0e17!important
+
+    .good
+
+        img
+            visibility: visible
+
+.set_table
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    padding: 5rem
+    align-items: center
+
+.set_table_no
+    width: 40vw
+    height: 100vh
+    padding: 1.5rem
+    right: 0
+    background: white
+    display: flex
+    flex-direction: column
+
+.real_Deal
+    font-size: .9rem
+    display: grid
+    grid-template-columns: 7rem auto
+    flex-direction: row
+    gap: 2rem
+    font-size: .8rem
+    padding: .4rem .8rem 1.5rem .8rem
+    text-transform: uppercase
+    color: #434343c7
+    align-items: center
+
+    .summary_name
+        color: black
+
+    input
+        background: #e1e0e094
+        padding: .4rem .6rem
+        width: 100%
+        border: none
+        font-size: .8rem
+        color: black
+        border-radius: 4px
+
+.tables_Selected
+    font-size: .9rem
+    font-weight: 600
+    text-transform: uppercase
+    padding: 0 .8rem 1rem .8rem
+
+.summary_tab
+    display: flex
+    flex-direction: row
+    border: 1px solid #347a0e44
+    display: flex
+    flex-direction: column
+    border-radius: 5px
+    padding-bottom: .7rem
+    margin: 0 .8rem 1.5rem 
+
+    .sum_header
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        background: #347a0e34
+        padding: .4rem 1rem 
+        align-items: center
+        margin-bottom: .4rem
+        border-radius: 4px 4px 0 0
+        font-size: .85rem
+        font-weight: 600
+
+        .close_code
+            font-size: 1rem
+            font-weight: bolder
+            cursor: pointer
+
+    label
+        display: grid
+        grid-template-columns: 7rem auto
+        flex-direction: row
+        gap: 2rem
+        font-size: .8rem
+        padding: .4rem .8rem 0 .8rem
+        text-transform: uppercase
+        color: #434343c7
+        align-items: center
+
+        .summary_name
+            color: black
+
+        input
+            background: #e1e0e094
+            padding: .4rem .6rem
+            width: 97%
+            border: none
+            font-size: .8rem
+            color: black
+            border-radius: 4px
+
+        input:focus
+            border: none
+            outline: none
+
+.selection
+    display: flex
+    flex-direction: column
+    width: 100%
+    flex: 1
+    justify-content: space-between
+
+    .selected
+        overflow: scroll
+        height: 50vh
+
+
+.select_head
+    font-weight: 600
+    font-size: 1.2rem
+    margin: 2rem .8rem .5rem .8rem
+    color: #275310
+
+.select_note
+    font-size: .9rem
+    margin: 0 .8rem 0 .8rem
+
+.finish_button
+    background: #275310
+    margin: 0 .8rem 1.3rem .8rem
+    bottom: 0
+    position: relative
+    border-radius: 5px
+    padding: .6rem 1rem
+    font-size: .9rem
+    color: white
+    font-weight: 600
+    text-align: center
+    cursor: pointer
+
+.modal
+    display: flex

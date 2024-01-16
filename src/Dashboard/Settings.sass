@@ -1,0 +1,259 @@
+.settings_container
+    color: #292929f3
+    width: 83vw
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    .the_settings
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        width: 100%
+        padding: 1rem 3rem
+
+    .settings_heading
+        font-size: 1.8rem
+        font-weight: 600
+        margin: 0
+        padding-bottom: 1.5rem
+        text-transform: capitalize
+
+    .settings_frame
+        display: flex
+        flex-direction: column
+        padding: 1rem 0
+
+        .section_header, .tab_title
+            font-size: 1.2rem
+            font-weight: bold
+            margin: 0
+            text-transform: capitalize
+
+        .settings_info
+            font-size: .9rem
+
+        .set_section
+            display: flex
+            flex-direction: column
+
+            .setting_tab
+                border: 1px solid #3d7a3730
+                border-radius: 5px
+                padding: 1rem 1.5rem
+                margin-top: 1rem
+
+                .tab_title
+                    font-size: 1.1rem
+                    padding-bottom: .8rem
+                    border-bottom: 1px solid #3d7a3730
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+
+                .profile_edit_one
+                    display: flex
+                    flex-direction: row
+                    padding: 1rem 0
+                    gap: 1rem
+                    align-items: center
+
+                .profile_edit_two
+                    grid-template-columns: 45% 45%
+                    font-size: .9rem
+                    justify-content: space-between
+                    padding: 1rem 0
+                    gap: 1rem
+                    align-items: center
+
+                    .set_Title
+                        text-transform: capitalize
+                        color: #2a2828ab
+
+                    .set_body
+                        font-size: .9rem
+
+                        &:nth-child(1)
+                            text-transform: capitalize
+
+                    input
+                        width: 85%
+                        height: 2.5rem
+                        // background: #29292914
+                        background: white
+                        border: 1px solid #3d7a3774
+                        outline: none
+                        border-radius: 5px
+                        margin-top: .4rem
+                        color: black
+                        padding: 0 1rem
+
+                    .the_picture
+                        width: 4rem
+                        height: 4rem
+                        border-radius: 10px
+
+                .set_heading
+                    display: flex
+                    flex-direction: column
+
+                    .set_username
+                        font-weight: 600
+                        text-transform: capitalize
+
+                    .set_mail
+                        color: grey
+                        font-size: .9rem
+
+                .set_logo
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+                    align-items: center
+                    gap: 1rem
+                    margin-top: .5rem
+
+                .upload
+                    background: #29292914
+                    color: black
+                    padding: .5rem 1rem
+                    border-radius: 5px
+                    font-weight: 600
+                    text-transform: capitalize
+                    font-size: .9rem
+                    cursor: pointer
+                    width: fit-content
+                    transition: .08s
+                    height: fit-content
+
+                    &:hover
+                        color: #275310eb
+                        background: #3b9d0620
+
+                .change_button
+                    background: #29292914
+                    color: black
+                    padding: .7rem 2rem
+                    border-radius: 5px
+                    font-weight: 600
+                    text-transform: capitalize
+                    font-size: .9rem
+                    cursor: pointer
+                    width: fit-content
+                    transition: .08s
+
+                    &:hover
+                        color: #275310eb
+                        background: #3b9d0620
+
+                .save_button
+                    background: #275310eb
+                    color: white
+
+                    &:hover
+                        background: #275310cb
+                        color: white
+
+                .button_div
+                    display: flex
+                    flex-direction: row
+                    gap: 1rem
+                    
+            .hide
+                display: none
+
+            .show
+                display: grid
+
+// the tables tab
+.set_table_cards
+    display: grid
+    grid-template-columns: auto auto auto
+    gap: 1rem
+    cursor: pointer
+    justify-content: space-between
+
+.set_tables_tab
+    display: flex
+    flex-direction: row
+    padding: 1rem 0
+    border-radius: 3px
+    align-items: center
+    width: fit-content
+    gap: 1rem
+
+    .set_table_card_dets
+        display: flex
+        flex-direction: column
+        gap: .2rem
+
+        .card_head
+            font-size: .9em
+            font-weight: 500
+            color: #434343c7
+            font-weight: bold
+
+        .card_exp
+            font-size: .9rem
+            color: #434343c7
+            line-height: 1.1rem
+
+.set_table_icons
+    padding: 1rem
+    height: 5rem
+    width: auto
+
+.add_table
+    font-size: .9rem
+    color: green
+    cursor: pointer
+    font-weight: 500
+
+    &:hover
+        text-decoration: underline
+
+    span
+        font-size: 1.2rem
+        padding: 0 .5rem
+
+.set_input
+    width: 50%
+    height: 2.5rem
+    // background: #29292914
+    background: white
+    border: 1px solid #3d7a3774
+    outline: none
+    border-radius: 5px
+    margin: .4rem .6rem 0
+    color: black
+    padding: 0 1rem
+
+.lil_note
+    font-size: .9rem
+    padding: 1rem 0 0
+
+// the navigation
+.the_container
+    width: 100%
+    display: flex
+    flex-direction: row
+    gap: 1rem
+
+    .option
+        padding: .5rem 1.7rem
+        border-radius: 10px
+        background: #29292914
+        font-size: .9rem
+        cursor: pointer
+        font-weight: 550
+
+        &:last-child
+            background: #d81f1f1b
+            color: #c30808
+
+    .active_nav
+        background: #275310eb
+        color: white
+
+        &:hover
+            background: #275310cb
