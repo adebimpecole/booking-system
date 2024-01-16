@@ -112,7 +112,7 @@ function App() {
         <>
           <Context.Provider value={providerValue}>
             <Routes>
-              <Route exact path="*" element={<SignUp />} />
+              <Route exact path="/" element={<Signup />} />
               <Route
                 exact
                 path="/login"

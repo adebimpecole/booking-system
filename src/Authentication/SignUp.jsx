@@ -79,7 +79,7 @@ const SignUp = () => {
         <div className="img_container"></div>
       </div>
       <div className="form_container">
-        <h2 className="form_name">Welcome to ....!</h2>
+        <h2 className="form_name">Welcome to LuxSeats!</h2>
         <form>
           <input
             type="text"
